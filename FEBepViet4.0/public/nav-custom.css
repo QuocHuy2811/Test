@@ -1,0 +1,27 @@
+/* Custom CSS cho navigation mobile */
+.navbar-custom {
+  background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+  border-top: 2px solid #ff9800;
+  box-shadow: 0 -2px 12px rgba(252, 182, 159, 0.15);
+}
+.navbar-custom .nav-link {
+  color: #ff9800;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link:focus,
+.navbar-custom .nav-link:hover {
+  color: #d84315;
+  background: rgba(255, 152, 0, 0.08);
+  border-radius: 12px;
+}
+.navbar-custom .nav-link i {
+  font-size: 1.7rem;
+  margin-bottom: 2px;
+}
+.navbar-custom .nav-link span {
+  font-size: 0.95rem;
+  display: block;
+}

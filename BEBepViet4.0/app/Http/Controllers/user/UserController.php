@@ -61,9 +61,7 @@ class UserController extends Controller
     public function dangXuat(Request $request)
     {
         $user = $request->user();
-        if ($user) {
-            $user->tokens()->delete();
-        }
+        $user->tokens()->delete();
         return response()->json([
             "status" => true,
             "message" => "Đăng xuất thành công"
